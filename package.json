@@ -1,0 +1,33 @@
+{
+  "name": "proxy-node-converter",
+  "version": "1.0.0",
+  "description": "代理节点格式转换工具",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node interactive-menu.js",
+    "test": "npm run process",
+    "process": "node process-files.js",
+    "process-file": "node process-files.js",
+    "menu": "node interactive-menu.js",
+    "merge-yaml": "node -e \"import('./merge-files.js').then(m => m.mergeYamlFiles(m.scanAndCategorizeFiles().yaml))\"",
+    "merge-base64": "node -e \"import('./merge-files.js').then(m => m.mergeBase64Files(m.scanAndCategorizeFiles().base64))\"",
+    "merge-url": "node -e \"import('./merge-files.js').then(m => m.mergeUrlFiles(m.scanAndCategorizeFiles().url))\""
+  },
+  "keywords": [
+    "proxy",
+    "v2ray",
+    "clash",
+    "shadowsocks",
+    "trojan",
+    "converter"
+  ],
+  "author": "Proxy Node Converter",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
