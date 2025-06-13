@@ -1,0 +1,290 @@
+{
+  "timestamp": "2025-06-07T18:52:33.765Z",
+  "summary": {
+    "passRate": 100,
+    "criticalIssueRate": 0,
+    "overallStatus": "EXCELLENT"
+  },
+  "statistics": {
+    "totalTests": 30,
+    "passedTests": 30,
+    "failedTests": 0,
+    "criticalIssues": 0,
+    "majorIssues": 0,
+    "minorIssues": 0
+  },
+  "issues": [],
+  "testResults": [
+    {
+      "name": "完全相同节点识别",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "完全相同的配置被正确识别为重复",
+      "details": "键1: example.com:443:vmess:test-uuid-123:0:auto:tcp:default_network, 键2: example.com:443:vmess:test-uuid-123:0:auto:tcp:default_network",
+      "metrics": {
+        "keyLength": 62,
+        "identical": true
+      }
+    },
+    {
+      "name": "字段顺序无关性",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "字段顺序不影响去重判断",
+      "details": "键1: example.com:443:trojan:password123:tcp:example.com:sni_field:default_network, 键2: example.com:443:trojan:password123:tcp:example.com:sni_field:default_network",
+      "metrics": {
+        "orderIndependent": true
+      }
+    },
+    {
+      "name": "大小写标准化",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "大小写标准化正确",
+      "details": "",
+      "metrics": {
+        "testCases": 2,
+        "passed": true
+      }
+    },
+    {
+      "name": "空格和trim处理",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "空格处理正确",
+      "details": "",
+      "metrics": {
+        "testCases": 2,
+        "passed": true
+      }
+    },
+    {
+      "name": "数值类型标准化",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "数值类型标准化正确",
+      "details": "",
+      "metrics": {
+        "testCases": 2,
+        "passed": true
+      }
+    },
+    {
+      "name": "VMess协议精准度",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "VMess协议精准度测试全部通过",
+      "details": "",
+      "metrics": {
+        "protocol": "VMess",
+        "totalTests": 3,
+        "passedTests": 3,
+        "accuracy": "100.0%"
+      }
+    },
+    {
+      "name": "VLESS协议精准度",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "VLESS协议精准度测试全部通过",
+      "details": "",
+      "metrics": {
+        "protocol": "VLESS",
+        "totalTests": 2,
+        "passedTests": 2,
+        "accuracy": "100.0%"
+      }
+    },
+    {
+      "name": "Trojan协议精准度",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "Trojan协议精准度测试全部通过",
+      "details": "",
+      "metrics": {
+        "protocol": "Trojan",
+        "totalTests": 2,
+        "passedTests": 2,
+        "accuracy": "100.0%"
+      }
+    },
+    {
+      "name": "Shadowsocks协议精准度",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "Shadowsocks测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "ShadowsocksR协议精准度",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "ShadowsocksR测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "Hysteria协议精准度",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "Hysteria测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "Hysteria2协议精准度",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "Hysteria2测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "TUIC协议精准度",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "TUIC测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "Snell协议精准度",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "Snell测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "AnyTLS协议精准度",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "AnyTLS测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "WireGuard协议精准度",
+      "severity": "MINOR",
+      "passed": true,
+      "reason": "WireGuard测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "SSH协议精准度",
+      "severity": "MINOR",
+      "passed": true,
+      "reason": "SSH测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "HTTP代理精准度",
+      "severity": "MINOR",
+      "passed": true,
+      "reason": "HTTP代理测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "SOCKS5代理精准度",
+      "severity": "MINOR",
+      "passed": true,
+      "reason": "SOCKS5代理测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "空值和默认值处理",
+      "severity": "CRITICAL",
+      "passed": true,
+      "reason": "空值处理测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "特殊字符处理",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "特殊字符测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "Unicode字符处理",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "Unicode测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "IPv6地址标准化",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "IPv6测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "极长字段处理",
+      "severity": "MINOR",
+      "passed": true,
+      "reason": "极长字段测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "万级节点精准度",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "万级节点测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "重复率分布测试",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "重复率分布测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "内存压力下精准度",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "内存压力测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "键生成性能测试",
+      "severity": "MINOR",
+      "passed": true,
+      "reason": "键生成性能测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "去重算法性能测试",
+      "severity": "MINOR",
+      "passed": true,
+      "reason": "去重性能测试通过",
+      "details": "",
+      "metrics": {}
+    },
+    {
+      "name": "精准度与速度权衡",
+      "severity": "MAJOR",
+      "passed": true,
+      "reason": "精准度速度权衡测试通过",
+      "details": "",
+      "metrics": {}
+    }
+  ],
+  "recommendations": [],
+  "precisionScore": 100
+}
